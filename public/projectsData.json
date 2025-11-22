@@ -1,0 +1,26 @@
+[
+  {
+    "id": 4,
+    "title": "Digital Queue App",
+    "description": "Queue management application built with React Native and Expo.",
+    "image": "https://picsum.photos/300/150?random=1",
+    "link": "https://example.com/project1",
+    "github": "https://github.com/VenomX-Meku/Digital-QueueApp"
+  },
+  {
+    "id": 5,
+    "title": "VenMeku Todo App",
+    "description": "Task management app built with React Native, featuring drag-and-drop.",
+    "image": "https://picsum.photos/300/150?random=2",
+    "link": "https://example.com/project2",
+    "github": "https://github.com/VenomX-Meku/VenMeku-Todo-ReactNative"
+  },
+  {
+    "id": 6,
+    "title": "All VenMeku Projects",
+    "description": "Check all my repositories on GitHub.",
+    "image": "https://picsum.photos/300/150?random=3",
+    "link": "https://example.com/project3",
+    "github": "https://github.com/VenomX-Meku"
+  }
+]
