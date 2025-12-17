@@ -1,6 +1,6 @@
 import profileImage from "../assets/profile-about.jpg";
 import { useEffect, useState, useRef } from "react";
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaDatabase } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, } from "react-icons/fa";
 import { SiMongodb, SiPostgresql, SiTypescript, SiReact } from "react-icons/si";
 
 export default function About() {
