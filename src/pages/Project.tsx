@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 // ============================================================
 // ✅ Project Interface (Structure of each project item)
-// Added: "github" for GitHub source code link
+// Added: "github" for GitHub source code link, "tags" for tech stack
 // ============================================================
 interface Project {
   id: number;
@@ -10,7 +10,8 @@ interface Project {
   description: string;
   image?: string; 
   link?: string;  
-  github?: string; 
+  github?: string;
+  tags?: string[]; // New: tech stack / category tags
 }
 
 export default function Projects() {
@@ -28,43 +29,74 @@ export default function Projects() {
 
   return (
     <div className="projects-page">
+      {/* =============================
+          PAGE HEADER
+      ============================== */}
       <h1 className="projects-title">My Projects</h1>
+      <p className="projects-subtitle">
+        Here are some of my recent projects — combining creativity, modern technologies, and clean design.
+      </p>
 
+      {/* =============================
+          PROJECT CARDS GRID
+      ============================== */}
       <div className="projects-list">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
 
+            {/* Project Image */}
             {project.image && (
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-              />
+              <div className="project-image-container">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image hover-zoom"
+                />
+              </div>
             )}
 
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+            {/* Project Title */}
+            <h2 className="project-title">{project.title}</h2>
 
-            <div className="project-buttons" style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-              
-              {/* View More Button (unchanged) */}
+            {/* Project Description */}
+            <p className="project-description">{project.description}</p>
+
+            {/* =============================
+                TECH STACK TAGS
+            ============================== */}
+            {project.tags && project.tags.length > 0 && (
+              <div className="project-tags">
+                {project.tags.map((tag, idx) => (
+                  <span key={idx} className={`tag ${tag.toLowerCase()}`}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
+
+            {/* =============================
+                PROJECT BUTTONS
+            ============================== */}
+            <div className="project-buttons" style={{ display: 'flex', gap: '10px', alignItems: 'center', marginTop: '10px', flexWrap: 'wrap' }}>
+
+              {/* View More Button */}
               {project.link && (
                 <a
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="view-btn">View More</button>
+                  <button className="view-btn">View Project</button>
                 </a>
               )}
 
-              {/* GitHub Icon Only, No Button */}
+              {/* GitHub Icon */}
               {project.github && (
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ display: 'inline-flex', alignItems: 'center', cursor: 'pointer' }}
+                  className="github-link"
                   title="View Source on GitHub"
                 >
                   <svg
@@ -72,7 +104,7 @@ export default function Projects() {
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
-                    fill="#24292e" // GitHub dark color
+                    fill="#24292e"
                   >
                     <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 
                     0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.729.083-.729 
@@ -86,6 +118,14 @@ export default function Projects() {
               )}
 
             </div>
+
+            {/* Optional: GitHub Stats Placeholder */}
+            {project.github && (
+              <div className="github-stats">
+                ⭐ Stars: 123 | 🍴 Forks: 45
+              </div>
+            )}
+
           </div>
         ))}
       </div>
