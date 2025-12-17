@@ -5,8 +5,6 @@ import { SiMongodb, SiPostgresql, SiTypescript, SiReact } from "react-icons/si";
 
 export default function About() {
   // Final values for each skill
-  // Final values for each skill
-  // Final values for each skill
   const finalSkillValues = {
     reactNative: 90,
     react: 85,
