@@ -1,26 +1,66 @@
 [
+  
+{
+  "id": 1,
+  "title": "Ring Property - Real Estate UI",
+  "description": "Modern property management dashboard designed in Figma with clean and responsive layout.",
+  "image": "/images/ring-property.png",
+  "link": "https://www.figma.com/proto/3sUIs95xAZxqZmcs73qkYJ/Figma-Projects-Active-Tech-PLC?node-id=301-761&p=f&t=5nZeV2Hx5y7NT6vj-0&scaling=min-zoom&content-scaling=fixed&page-id=2%3A2&starting-point-node-id=301%3A761&hide-ui=1",
+  "tags": ["UI/UX", "Figma", "WebApp"],
+  "category": "UI/Figma"
+}
+,
+
+
+
   {
-    "id": 4,
-    "title": "Digital Queue App",
-    "description": "Queue management application built with React Native and Expo.",
-    "image": "https://picsum.photos/300/150?random=1",
-    "link": "https://example.com/project1",
-    "github": "https://github.com/VenomX-Meku/Digital-QueueApp"
+    "id": 2,
+    "title": "CDMS - Company Documents Management UI",
+    "description": "Document management dashboard UI designed in Figma for structured company workflows.",
+    "image": "/images/CDMS1.png",
+    "link": "https://www.figma.com/proto/3sUIs95xAZxqZmcs73qkYJ/Figma-Projects-Active-Tech-PLC?node-id=2366-9734&t=q4Fm4TknIwby9Fgz-0&scaling=min-zoom&content-scaling=fixed&page-id=35%3A638&starting-point-node-id=2630%3A16619",
+    "tags": ["UI/UX", "Figma", "Dashboard"],
+    "category": "UI/Figma"
   },
   {
-    "id": 5,
-    "title": "VenMeku Todo App",
-    "description": "Task management app built with React Native, featuring drag-and-drop.",
-    "image": "https://picsum.photos/300/150?random=2",
-    "link": "https://example.com/project2",
-    "github": "https://github.com/VenomX-Meku/VenMeku-Todo-ReactNative"
+    "id": 3,
+    "title": "ERP System UI",
+    "description": "Enterprise resource planning dashboard UI designed with modern and professional interface system.",
+    "image": "/images/ERP System.png",
+    "link": "https://www.figma.com/proto/3sUIs95xAZxqZmcs73qkYJ/Figma-Projects-Active-Tech-PLC?node-id=2416-100&t=q4Fm4TknIwby9Fgz-0&scaling=min-zoom&content-scaling=fixed&page-id=76%3A1127&hide-ui=1",
+    "tags": ["UI/UX", "Figma", "Enterprise"],
+    "category": "UI/Figma"
   },
+  
+  
   {
     "id": 6,
+    "title": "Digital Queue App",
+    "description": "Queue management mobile application built with React Native and Expo.",
+    "image": "https://picsum.photos/300/150?random=16",
+    "link": "https://example.com/digital-queue",
+    "github": "https://github.com/VenomX-Meku/Digital-QueueApp",
+    "tags": ["ReactNative", "Expo", "MobileApp"],
+    "category": "Developed Apps"
+  },
+  {
+    "id": 7,
+    "title": "VenMeku Todo App",
+    "description": "Task management app built with React Native featuring drag-and-drop.",
+    "image": "https://picsum.photos/300/150?random=17",
+    "link": "https://example.com/venmeku-todo",
+    "github": "https://github.com/VenomX-Meku/VenMeku-Todo-ReactNative",
+    "tags": ["ReactNative", "Mobile", "Productivity"],
+    "category": "Developed Apps"
+  },
+  {
+    "id": 8,
     "title": "All VenMeku Projects",
-    "description": "Check all my repositories on GitHub.",
-    "image": "https://picsum.photos/300/150?random=3",
-    "link": "https://example.com/project3",
-    "github": "https://github.com/VenomX-Meku"
+    "description": "Explore all my repositories and open-source contributions on GitHub.",
+    "image": "https://picsum.photos/300/150?random=18",
+    "link": "https://example.com/all-projects",
+    "github": "https://github.com/VenomX-Meku",
+    "tags": ["GitHub", "Portfolio", "OpenSource"],
+    "category": "Developed Apps"
   }
 ]

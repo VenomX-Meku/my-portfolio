@@ -2869,3 +2869,99 @@ body.dark-mode .contact-page p,
 body.dark-mode .contact-info p {
   color: #e5e7eb; /* light gray / white for dark mode */
 }
+
+
+
+/* =============================
+   PROJECT CARDS - ENHANCEMENTS
+   ============================= */
+
+/* Card Container */
+.project-card {
+  background: #fff;             /* clean white card */
+  border-radius: 12px;          /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: translateY(-5px);  /* slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Image */
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Zoom */
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Card Content */
+.project-card .card-content {
+  padding: 16px;
+}
+
+/* Title */
+.project-card .card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+/* Description */
+.project-card .card-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* Tags */
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card .tags span {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.project-card .tags span:hover {
+  background: #ddd;
+}
+
+/* Links (Live / Github / Figma) */
+.project-card .links {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.project-card .links a {
+  font-size: 0.85rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-card .links a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
